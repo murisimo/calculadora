@@ -26,29 +26,31 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="mb-2">
-                            <button id="btn7" class="btn btn-lg btn-primary">7</button>
-                            <button id="btn8" class="btn btn-lg btn-primary">8</button>
-                            <button id="btn9" class="btn btn-lg btn-primary">9</button>
+                            <button id="btn7" class="btn btn-lg btn-primary" onclick="agregar(7)">7</button>
+                            <button id="btn8" class="btn btn-lg btn-primary" onclick="agregar(8)">8</button>
+                            <button id="btn9" class="btn btn-lg btn-primary" onclick="agregar(9)">9</button>
                         </div>
                         <div class="mb-2">
-                            <button id="btn4" class="btn btn-lg btn-primary">4</button>
-                            <button id="btn5" class="btn btn-lg btn-primary">5</button>
-                            <button id="btn6" class="btn btn-lg btn-primary">6</button>
+                            <button id="btn4" class="btn btn-lg btn-primary" onclick="agregar(4)">4</button>
+                            <button id="btn5" class="btn btn-lg btn-primary" onclick="agregar(5)">5</button>
+                            <button id="btn6" class="btn btn-lg btn-primary" onclick="agregar(6)">6</button>
                         </div>
                         <div class="mb-2"> 
-                            <button id="btn1" class="btn btn-lg btn-primary">1</button>
-                            <button id="btn2" class="btn btn-lg btn-primary">2</button>
-                            <button id="btn3" class="btn btn-lg btn-primary">3</button>
+                            <button id="btn1" class="btn btn-lg btn-primary" onclick="agregar(1)">1</button>
+                            <button id="btn2" class="btn btn-lg btn-primary" onclick="agregar(2)">2</button>
+                            <button id="btn3" class="btn btn-lg btn-primary" onclick="agregar(3)">3</button>
                         </div>
                         <div class="mb-2">
-                            <button id="btn0" class="btn btn-lg btn-primary">0</button>
+                            <button id="btn0" class="btn btn-lg btn-primary" onclick="agregar(0)">0</button>
+                            <button id="btn0" class="btn btn-lg btn-danger" onclick="limpiar()">C</button>
+                            <button id="btn0" class="btn btn-lg btn-warning" onclick="igual()">=</button>
                         </div>
                     </div>                    
                     <div class="col-md-4 ">
-                        <button id="btnMultiplicar" class="btn btn-lg btn-info mb-2">X</button>
-                        <button id="btnResta" class="btn btn-lg btn-info mb-2">-</button>
-                        <button id="btnIgual" class="btn btn-lg btn-info mb-2">=</button>
-                        <button id="btnSuma" class="btn btn-lg btn-info mb-2">+</button>
+                        <button id="btnMultiplicar" class="btn btn-lg btn-info mb-2" onclick="dividir(); limpiar()">÷</button>
+                        <button id="btnResta" class="btn btn-lg btn-info mb-2" onclick="multiplicar(); limpiar()">x</button>
+                        <button id="btnIgual" class="btn btn-lg btn-info mb-2" onclick="restar(); limpiar()">-</button>
+                        <button id="btnSuma" class="btn btn-lg btn-info mb-2" onclick="sumar(); limpiar()">+</button>
                     </div>
                 </div>
             </article>
